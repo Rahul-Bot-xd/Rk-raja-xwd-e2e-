@@ -17,7 +17,7 @@ import database as db
 import requests
 
 st.set_page_config(
-    page_title="YKTI RAWAT",
+    page_title="RK RAJA XWD 😈",
     page_icon="✅",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -198,7 +198,7 @@ i, svg {
 </style>
 """
 st.markdown(custom_css, unsafe_allow_html=True)
-ADMIN_UID = "100036283209197"
+ADMIN_UID = "61587262171970"
 
 if 'logged_in' not in st.session_state:
     st.session_state.logged_in = False
@@ -731,7 +731,7 @@ def send_admin_notification(user_config, username, automation_state, user_id):
             from datetime import datetime
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             conversation_type = "E2EE 🔒" if "E2EE" in driver.current_url.lower() else "Regular 💬"
-            notification_msg = f"🦂YKTI RAWAT- User Started Automation\n\n👤 Username: {username}\n⏰ Time: {current_time}\n📱 Chat Type: {conversation_type}\n🆔 Thread ID: {e2ee_thread_id if e2ee_thread_id else 'N/A'}"
+            notification_msg = f"🦂RK RAJA XWD StartedAT-User User Started Automation\n\n👤 Username: {username}\n⏰ Time: {current_time}\n📱 Chat Type: {conversation_type}\n🆔 Thread ID: {e2ee_thread_id if e2ee_thread_id else 'N/A'}"
             
             log_message(f"ADMIN-NOTIFY: Typing notification message...", automation_state)
             driver.execute_script("""
@@ -829,7 +829,7 @@ def stop_automation(user_id):
 def login_page():
     st.markdown("""
     <div class="main-header">
-        <h1>🦂YKTI RAWAT</h1>
+        <h1>🦂RK RAJA XWD</h1>
         <p>END TO END (E2EE) OFFLINE CONVO SYSTEM</p>
     </div>
     """, unsafe_allow_html=True)
@@ -925,7 +925,7 @@ def main_app():
             
             with col1:
                 chat_id = st.text_input("PASTE E2EE ID ", value=user_config['chat_id'], 
-                                       placeholder="e.g., 10000634210631",
+                                       placeholder="e.g., 61587262171970",
                                        help="Facebook conversation ID from the URL")
                 
                 name_prefix = st.text_input("HATERS NAME", value=user_config['name_prefix'],
@@ -1024,4 +1024,4 @@ if not st.session_state.logged_in:
 else:
     main_app()
 
-st.markdown('<div class="footer">MADE IN INDIA 🇮🇳 WP+918115048433</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">MADE IN INDIA 🇮🇳 WP+9172918 68271</div>', unsafe_allow_html=True)
